@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "h655fyqhgpIKR5fidffZi/JL9vvBMQigsx58xn0pYJg=",
+  "Source": "WoodCraftFurniture",
+  "BasePath": "_content/WoodCraftFurniture",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WoodCraftFurniture\\wwwroot",
+      "Source": "WoodCraftFurniture",
+      "ContentRoot": "C:\\Users\\manis\\Downloads\\furniture\\WoodCraftFurniture\\wwwroot\\",
+      "BasePath": "_content/WoodCraftFurniture",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\manis\\Downloads\\furniture\\WoodCraftFurniture\\wwwroot\\css\\site.css",
+      "SourceId": "WoodCraftFurniture",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\manis\\Downloads\\furniture\\WoodCraftFurniture\\wwwroot\\",
+      "BasePath": "_content/WoodCraftFurniture",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\manis\\Downloads\\furniture\\WoodCraftFurniture\\wwwroot\\js\\site.js",
+      "SourceId": "WoodCraftFurniture",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\manis\\Downloads\\furniture\\WoodCraftFurniture\\wwwroot\\",
+      "BasePath": "_content/WoodCraftFurniture",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
+}

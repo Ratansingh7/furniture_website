@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200');
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.product-card {
+    transition: transform 0.2s;
+    border: none;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    background-color: #f8f9fa !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}

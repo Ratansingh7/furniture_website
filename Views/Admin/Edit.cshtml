@@ -1,0 +1,51 @@
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-4 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h2 class="mb-4 fw-bold">Edit Product</h2>
+                    <form method="post" action="@Url.Action("Edit")">
+                        <input type="hidden" name="ProductId" value="@Model.ProductId" />
+                        <input type="hidden" name="CreatedDate" value="@Model.CreatedDate" />
+                        <div class="mb-3">
+                            <label class="form-label">Product Name</label>
+                            <input type="text" name="Name" class="form-control" value="@Model.Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Category</label>
+                            <select name="Category" class="form-select" required>
+                                <option value="Sofas" selected="@(Model.Category == "Sofas")">Sofas</option>
+                                <option value="Beds" selected="@(Model.Category == "Beds")">Beds</option>
+                                <option value="Tables" selected="@(Model.Category == "Tables")">Tables</option>
+                                <option value="Chairs" selected="@(Model.Category == "Chairs")">Chairs</option>
+                                <option value="Wardrobes" selected="@(Model.Category == "Wardrobes")">Wardrobes</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Price</label>
+                            <input type="number" step="0.01" name="Price" class="form-control" value="@Model.Price" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea name="Description" class="form-control" rows="4">@Model.Description</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Image URL</label>
+                            <input type="text" name="ImageUrl" class="form-control" value="@Model.ImageUrl" />
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" name="IsFeatured" class="form-check-input" value="true" checked="@Model.IsFeatured" />
+                            <label class="form-check-label">Featured Product</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Product</button>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

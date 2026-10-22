@@ -1,0 +1,51 @@
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-4 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4 fw-bold">Register</h2>
+                    
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger">@ViewBag.Error</div>
+                    }
+                    @if (ViewBag.Success != null)
+                    {
+                        <div class="alert alert-success">@ViewBag.Success</div>
+                    }
+
+                    <form method="post" action="@Url.Action("Register")">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label class="form-label">First Name</label>
+                                <input type="text" name="FirstName" class="form-control" required />
+                            </div>
+                            <div class="col">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" name="LastName" class="form-control" required />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="Email" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" name="Password" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <input type="text" name="Phone" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mb-3">Register</button>
+                        <p class="text-center">Already have an account? <a href="@Url.Action("Login")">Login here</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
